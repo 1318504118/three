@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>已完成订单</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui2.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui3.css"/>
+ 		<link rel="stylesheet" type="text/css" href='weui-master/style/weuix.min.css'/>
+		<script src="weui-master/zepto.min.js"></script>
+		<!--<script>
+			$(function(){
+				$('#tab1').tab({defaultIndex:0,activeClass:"tab-green"})
+			})
+		</script>-->
+		<style>
+			/*.shopping{
+				text-align: center;
+				height: 200px;
+				line-height: 300px;
+			}
+			p{
+				text-align: center;
+			}
+			.btn{	
+					border-radius:0.8 ;
+					height: 30px;
+					line-height: 30px;
+					padding: 0 18px;
+					font-size: 16px;
+					margin-left: 10px;
+					margin-top: 10px;
+			}*/
+		</style>
+		</head>
+	<body>
+		<!--
+        	作者：1318504118@qq.com
+        	时间：2017-07-25
+        	描述：标题
+        -->
+		<div class="weui_btn_default weui-header "> 
+  			<div class="weui-header-left"> <a class="icon icon-109 f-black" href="Xfx_vip.html"></a>  </div>
+   			<h1 class="weui-header-title f-black">我的订单</h1>
+    	</div>
+    	<!--
+        	作者：1318504118@qq.com
+        	时间：2017-07-25
+        	描述：列表项
+        -->
+        <div class="weui_tab " style="height:44px;" id="tab1"><!--tab-fixed添加顶部-->
+            <div class="weui_navbar" style="height:44px;">
+                <div class="weui_navbar_item" onclick="window.location.href='Xfx_Order.html'">
+            全部
+                </div>
+                <div class="weui_navbar_item" onclick="window.location.href='Xfx_Order_Payment.html'">
+                    待付款
+                </div>
+                <div class="weui_navbar_item " onclick="window.location.href='Xfx_Order_TrainSport.html'">
+                    待发货
+                </div>
+                     <div class="weui_navbar_item " onclick="window.location.href='Xfx_Order_Receive.html'">
+                    待收货
+                </div>
+                <div class="weui_navbar_item tab-green" onclick="window.location.href='Xfx_Order_Complete.html'">
+                    已完成
+                </div>
+            </div>
+        </div>
+         <div class="shopping" style="">
+    	 	 <p>第四页</p>
+    	 	 <!--<img src="weui-master/images/Order.png"/></br>
+			<p style="margin-top: -280px;color: #888888;font-size: 18px;">您还没有相关订单</p>	    
+    	 	<p style="margin-top: -276px;color:#888888;font-size: 14px;">可以去看看哪些想买的</p>	     	
+    	 	-->
+    	 </div>
+    		 <!--<p>
+    	 		<button class="btn" onclick="window.location.href='Xfx_vip.html'">随便逛逛</button>
+    	 		
+    	 	</p>-->
+    	<!--底部栏目-->
+	<div class="weui_tab tab-bottom" style="height: 0;">
+            <div class="weui_tabbar ">
+                <a href="Xfx_Home.html" class="weui_tabbar_item">
+                    <div class="weui_tabbar_icon">
+             		  <img src='weui-master/images/主页.png' />
+                    </div>
+                    <p class="weui_tabbar_label">主页</p>
+                </a>
+               <a href="Xfx_sort.html" class="weui_tabbar_item ">
+                    <div class="weui_tabbar_icon">
+             		  <img src="weui-master/images/分类.png" />
+                    </div>
+                    <p class="weui_tabbar_label">分类</p>
+                </a>
+                <a href="Xfx_shopping.html" class="weui_tabbar_item">
+                    <div class="weui_tabbar_icon">
+             		  <img src="weui-master/images/购物车.png" />
+                    </div>
+                    <p class="weui_tabbar_label">购物车</p>
+                </a>
+                <a href="Xfx_vip.html" class="weui_tabbar_item ">
+                    <div class="weui_tabbar_icon">
+             		  <img src="weui-master/images/我的.png" />
+                    </div>
+                    <p class="weui_tabbar_label">会员中心</p>
+                </a>    
+            </div>
+       </div>
+	</body>
+</html>

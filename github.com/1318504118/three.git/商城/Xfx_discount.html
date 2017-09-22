@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的优惠券</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui2.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui3.css"/>
+ 		<link rel="stylesheet" type="text/css" href='weui-master/style/weuix.min.css'/>
+		<link  href="weui-master/style/icon.css" />
+		<style>
+			
+			.shopping{
+				height: 100%;
+				text-align: center;
+				line-height: 300px;
+			}
+			p{
+				text-align: center;
+			}
+			.btn_discount{
+				position: relative;
+				height:70px ;
+				width: 100%;
+				text-align: center;
+				
+			}
+			.btn{
+				font-size: 15px;
+				margin-top: 5px;
+				border-radius:10px ;
+				position: relative;
+				height: 60%;
+				width: 80%;
+				border: 1px solid black;
+				color: black;
+				background: #EEEEEE;
+			}	
+		
+		</style>
+		<script src="weui-master/zepto.min.js"></script>
+		<script>
+//			$(function(){
+//				$('#tab1').tab({defaultIndex:0,activeClass:"tab-green"})
+//			})
+			$(function(){
+				$('#tab1').tab({defaultIndex:0,activeClass:'tab-green'})
+			})
+		</script>
+		</script>
+	</head>
+	<body>
+		<div class="weui_btn_default weui-header "> 
+  			<div class="weui-header-left"> <a class="icon icon-109 f-black" href="Xfx_vip.html"></a>  </div>
+   			<h1 class="weui-header-title f-black">我的优惠券</h1>
+    	</div>
+    	 <div class="weui_tab " style="height:44px;" id="tab1"><!--tab-fixed添加顶部-->
+            <div class="weui_navbar" style="height:44px;">
+                <div class="weui_navbar_item tab-green" >
+           			未使用
+           			
+                </div>
+                <div class="weui_navbar_item" onclick="window.location.href='Xfx_discount_use.html'">
+                    已使用
+                    
+                </div>
+                <div class="weui_navbar_item" onclick="window.location.href='Xfx-discount_no-use.html'">
+                    已过期
+                    
+            	</div>
+        	</div>
+    	 </div>
+    	 <!--优惠券提示-->
+    	 <div class="btn_discount" >
+    	 	<button class="btn">赶紧去领券中心看看更多的优惠券～</button>
+    	 </div>
+    	 <div class="shopping">
+    	 	 <img src="weui-master/images/优惠券 (2).png"/></br>
+			<p style="margin-top: -280px;color: #888888;font-size: 18px;">您还没有优惠券</p>	    
+    	 	 </div>
+    	 </div>
+        
+		
+	</body>
+</html>

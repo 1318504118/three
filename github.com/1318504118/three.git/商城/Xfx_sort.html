@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品分类</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui2.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui3.css"/>
+ 		<link rel="stylesheet" type="text/css" href='weui-master/style/weuix.min.css'/>
+		<script src="weui-master/zepto.min.js"></script>
+		<script src="weui-master/iscroll.js"></script>
+		 <script>
+  
+  		 </script>
+		<style>
+			body{
+				height: 100%;
+				width: 100%;
+			}
+			.weui_search_bar:before{
+				border: none;
+			}
+			.weui_search_bar:after{
+				border: none;
+			}
+			.weui_btn:after{
+				border-radius: 0px;
+			}
+			.search-input+button::after{
+				    border: 1px solid ##02BB00!important;
+			}
+			.search-input{
+				border:none;
+			}
+			.weui_label{
+				width: 70px;
+			}
+			/*设置图片和字体的高度*/
+			.weui_tabbar_icon+.weui_tabbar_label{
+				margin-top: 1px;
+			}
+			.weui_cell_hd{
+				padding: 2px;
+			}
+			/*设置底部*/
+			.weui-footer{
+				padding: 20px;
+				margin-top: 15px;
+			} 
+			.content{
+				position: relative;
+				width: 100%;
+				height: 100%;
+			}
+			.slide-left{
+				float: left;
+				background: #D1D1D1;
+				position: relative;
+				width: 25%;
+				height: 100%;
+			}
+			.slide-right{
+				float: left;
+				position:relative;
+				width: 75%;
+				height: 100%;
+			}
+			.title{
+				text-align: center;
+				padding: 5px;
+			}
+			.weui-header-title{
+				border: solid #EEEEEE;
+			}
+		</style>
+	</head>
+	<body >
+		<!--标题部分-->
+		<div class="weui-header-title" >
+			 <a   style="float: left;padding: 10px 8px; margin-left:2px;"   class="icon icon-109 f-black" href="javascript:history.go(-1)"></a>
+			<div class="weui_search_bar">
+			<input type="search" class="search-input" id='search' placeholder='关键字' /><button  class="weui_btn weui_btn_mini weui_btn_primary" style=""><i  class="icon icon-4"></i></button>    	
+			</div>
+		</div>	
+		<!--主体部分左边-->
+		<div class="content">
+			<div class="slide-left">
+				 <div class="title" id="t1" style="background: #EEEEEE;">推荐分类</div>
+				 <div class="title" id='t2' onclick="window.location.href='Xfx_sort_1.html'">孕妈专区</div>
+				 <div class="title" id="t3"	onclick="window.location.href='Xfx_sort_2.html'">会员专属</div>
+				 <div class="title" id="t4" onclick="window.location.href='Xfx_sort_3.html'">童车/床品</div>
+				 <div class="title" id="t5"	onclick="window.location.href='Xfx_sort_4.html'">儿童玩具</div>
+			</div>
+			<!--主体右边-->
+			<div class="slide-right">
+				<div class="weui_grids" >
+            <a href="javascript:" class="weui_grid js_grid" >
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/活动.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    	活动
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid">
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/ic_招商加盟.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    	招商加盟
+                </p>
+            </a>
+            <a href="javascript:;" class="weui_grid js_grid">
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/母婴玩具 (1).png"  alt="">
+                </div>
+                <p class="weui_grid_label">
+                    母婴玩具
+                </p>
+            </a>
+           
+        </div>       
+			</div>
+		</div>
+		<!--底部栏目-->
+		<div class="weui_tab tab-bottom" style="height: 0;">
+	            <div class="weui_tabbar ">
+	                <a href="Xfx_Home.html" class="weui_tabbar_item">
+	                    <div class="weui_tabbar_icon">
+	             		  <img src='weui-master/images/主页.png' />
+	                    </div>
+	                    <p class="weui_tabbar_label">主页</p>
+	                </a>
+	                <a href="Xfx_sort.html" class="weui_tabbar_item weui_bar_item_on">
+	                    <div class="weui_tabbar_icon">
+	             		  <img src="weui-master/images/分类.png" />
+	                    </div>
+	                    <p class="weui_tabbar_label">分类</p>
+	                </a>
+	                <a href="Xfx_shopping.html" class="weui_tabbar_item">
+	                    <div class="weui_tabbar_icon">
+	             		  <img src="weui-master/images/购物车.png" />
+	                    </div>
+	                    <p class="weui_tabbar_label">购物车</p>
+	                </a>
+	                <a href="Xfx_vip.html" class="weui_tabbar_item ">
+	                    <div class="weui_tabbar_icon">
+	             		  <img src="weui-master/images/我的.png" />
+	                    </div>
+	                    <p class="weui_tabbar_label">会员中心</p>
+	                </a>    
+	            </div>
+	      </div>
+	</body>
+</html>

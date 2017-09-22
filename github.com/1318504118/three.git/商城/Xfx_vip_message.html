@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>会员资料</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui2.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui3.css"/>
+ 		<link rel="stylesheet" type="text/css" href='weui-master/style/weuix.min.css'/>
+		<link rel="stylesheet" type="text/css" href="weui-master/style/icon.css" />
+		<script src='weui-master/zepto.min.js'></script>
+		<script src="weui-master/picker.js"></script>
+		<script src="weui-master/picker-city.js"></script>
+	    <style>
+	    	.weui_cell_hd {
+    padding-right: .35em;
+	    </style>
+	    <script>
+  		$(function(){
+  		$("#text2").picker({
+        title: '你的性别',
+        toolbarCloseText:'确定',
+        cols: [
+          {
+            textAlign: 'center',
+            values: ['男','女'],
+            displayValues:['男','女'],
+          }
+        ]
+     });     
+        $("#date").datetimePicker({title:"选择日期",m:1});
+		$("#time").datetimePicker({title:"选择日期时间",min:'2015-12-10',max:'2050-10-01'});
+//		$("#time2").picker({title:"选择时间",
+//      cols: [
+//        {
+//          textAlign: 'center',
+//          values: (function () {
+//              var arr = [];
+//              for (var i = 0; i <= 23; i++) { arr.push(i < 10 ? '0' + i : i); }
+//              return arr;
+//          })()
+//          
+//        },
+//        {
+//          textAlign: 'center',
+//          values:  (function () {
+//              var arr = [];
+//              for (var i = 0; i <= 59; i++) { arr.push(i < 10 ? '0' + i : i); }
+//              return arr;
+//          })(),
+//        }
+//      ]});          
+          	
+		$("#ssx").cityPicker({
+        	title: "选择省市县"
+      	});
+ 		$("#ss").cityPicker({
+        	title: "选择省市",
+        	showDistrict: false	
+      });     
+	  });      
+         
+      </script>
+</head>
+
+<body>
+	 <!--标题-->
+		<div class="weui_btn_default weui-header "> 
+  			<div class="weui-header-left"> <a class="icon icon-109 f-black" href="javascript:history.go(-1)"></a>  </div>
+   			<h1 class="weui-header-title f-black">我的资料</h1>
+    	</div>    
+		<form id="form">
+        	<div class="weui_cells weui_cells_form">
+    			<!--姓名-->
+    			<div class="weui_cell">
+                	<div class="weui_cell_hd"><label class="weui_label">姓名</label></div>
+                	<div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text"  placeholder="请输入姓名">
+                	</div>
+            	</div>   	
+            	<!--微信-->
+            	<div class="weui_cell">
+                	<div class="weui_cell_hd"><label class="weui_label">微信</label></div>
+                	<div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" placeholder="请输入微信号">
+                	</div>
+            	</div>
+            	<!--性别-->
+            	<div class="weui_cell">
+                <div class="weui_cell_hd"><label for="" class="weui_label">性别</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="" placeholder="男/女" id='text2'/>
+                    
+                </div>
+              
+            </div>       
+            	<!--日期-->
+            	<div class="weui_cell">
+                	<div class="weui_cell_hd"><label for="" class="weui_label">生日</label></div>
+                	<div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="2016-12-10" id='date'/>
+                    <div class="weui_cell_hd">
+                    <input type="checkbox" class="weui_check" name="checkbox1" id="s11" checked="checked">
+                    <i class="weui_icon_checked"></i>
+                </div>
+                </div>
+               	</div> 
+               	<!--地址-->
+            		<div class="weui_cell">
+                	<div class="weui_cell_hd"><label for="" class="weui_label">所在城市</label></div>
+                	<div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" value="江苏 苏州 吴江"   id='ssx'/>    
+                </div>
+ 			</div>
+ 		</form>
+  		<!--提交按钮-->
+  		<div class="weui_btn_area">
+       			 <a id="reset" href="javascript:" class="weui_btn weui_btn_primary" onclick="document.getElementById('form').reset();">确认修改</a>
+    	</div>
+        
+</body>
+       
+	
+	
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui2.css"/>
+ 		<link rel="stylesheet" type="text/css" href="weui-master/style/weui3.css"/>
+ 		<link rel="stylesheet" type="text/css" href='weui-master/style/weuix.min.css'/>
+		<script src="weui-master/zepto.min.js"></script>
+		<script src="weui-master/iscroll.js"></script>
+		<script>
+		  	
+		</script>
+		<style>
+			.weui_label{
+				width: 70px;
+			}
+			/*设置图片和字体的高度*/
+			.weui_tabbar_icon+.weui_tabbar_label{
+				margin-top: 1px;
+			}
+			.weui_cell_hd{
+				padding: 2px;
+			}
+			/*设置底部*/
+			.weui-footer{
+				padding: 20px;
+				margin-top: 15px;
+			} 
+		</style>
+	</head>
+	<body >
+		<div class="vip-content" style="margin-bottom: 50px;overflow: hidden;">		
+			<!--标题-->
+			<div class="weui_media_box weui_media_appmsg" style="background: lightyellow; color: black;padding: 6px 10px;" >
+                    <div class="weui_media_hd" >
+                    	<img class="weui_media_appmsg_thumb"   style="border-radius: 29px;"   src="weui-master/images/20140606013057676.jpg" />
+                    </div>
+                    <div class="weui_media_bd">
+                        <h4 class="weui_media_title">小伙子</h4>    
+                        <p class="vip_log" ><img src="weui-master/images/vip.png"/></p>
+                    </div>
+                    <div class="" style="text-align: right;line-height:30px ;position: relative;">
+                	  	<img src='weui-master/images/设置 设定 配置 齿轮.png'  onclick="javascript:window.location.href='Xfx_vip_message.html'" />
+                    </div>	
+			</div>
+			<div class="weui_cell " style="background: white;">
+                <div class="weui_cell_hd">
+                    <label for="" class="weui_label">红包：</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    0.00
+                </div>
+            </div>
+            <div class="weui_cell" style="background: white;">
+                <div class="weui_cell_hd">
+                    <label for="" class="weui_label">积分：</label>
+                </div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    0.00
+                </div>
+            </div>
+			<!--
+        	作者：1318504118@qq.com
+        	时间：2017-07-25
+        	描述：列表
+        -->
+        <div class="weui_cells weui_cells_access">
+            <a class="weui_cell " href="Xfx_Order.html">
+            	<div class="weui_cell_hd">
+            		<img src='weui-master/images/订单 .png'/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                <p style="float: left;margin-left: 2px;">
+                	我的订单</p>
+                    <p style="text-align: right;color: 					#888888;">查看我的全部订单</p>
+                </div>
+                <div class="weui_cell_ft"></div>
+            </a>
+            <div class="weui_grids grids-small">
+            <a href="Xfx_Order_Payment.html" class="grid">
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/待付款.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                  待付款
+                </p>
+            </a>
+            <a href="Xfx_Order_TrainSport.html" class="grid">
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/待发货.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                                     待发货
+                </p>
+            </a>
+            <a href="Xfx_Order_Receive.html" class="grid">
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/待收货 (1).png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    待收货
+                </p>
+            </a>
+            <a href="Xfx_refund.html" class="grid">
+                <div class="weui_grid_icon">
+                    <img src="weui-master/images/待退款.png" alt="">
+                </div>
+                <p class="weui_grid_label">
+                    待退款
+                </p>
+            </a>   
+        </div>		
+        </div>
+		<div class="weui_cells weui_cells_access">
+            <a class="weui_cell " href="Xfx_vip_message.html">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/我的 (2).png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>我的资料</p>
+                </div>
+                <div class="weui_cell_ft"></div>
+            </a>
+            <a class="weui_cell " href="Xfx_boud_mobile.html">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/绑定手机.png	"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p>绑定手机</p>
+                </div>
+                <div class="weui_cell_ft"></div>
+            </a>
+        </div>
+        <div class="weui_cells weui_cells_access">
+            <a class="weui_cell " href="javascript:;">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/我的优惠券.png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p style="margin-left: 1px;">领取优惠券</p>
+                </div>
+                <div class="weui_cell_ft">
+                	<!--<span class="weui-badge" ></span>-->
+                </div>
+            </a>
+            <a class="weui_cell " href="Xfx_discount.html">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/优惠券 (1).png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p style="margin-left: 2px;">我的优惠券</p>
+                </div>
+                <div class="weui_cell_ft">
+                	<span class="weui-badge" >0</span>
+                </div>
+            </a>
+
+        </div>
+         <div class="weui_cells weui_cells_access">
+            <a class="weui_cell " href="Xfx_shopping.html">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/我的购物车 (2).png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p style="margin-left: 2px;">我的购物车</p>
+                </div>
+                <div class="weui_cell_ft">
+                	<span class="weui-badge">0</span>
+                </div>
+            </a>
+            <a class="weui_cell " href="javascript:;">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/我的收藏.png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p style="margin-left: 2px;">我的收藏</p>
+                </div>
+                <div class="weui_cell_ft">
+                	<span class="weui-badge" >0</span>
+                </div>
+            </a>
+             <a class="weui_cell " href="Xfx_footprint.html">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/我的足迹.png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p style='margin-left: -1px;'>我的足迹</p>
+                </div>
+                <div class="weui_cell_ft"></div>
+            </a>
+            <a class="weui_cell " href="Xfx_toast.html">
+            	<div class="weui_cell_hd">
+            		<img src="weui-master/images/消息提醒 (2).png"/>
+            	</div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <p style="margin-left: 2px;">消息提醒设置</p>
+                </div>
+                <div class="weui_cell_ft"></div>
+            </a>
+        </div>
+        <div class="weui-footer ">
+           <!-- <p class="weui-footer-links">-->
+<!--					           <a href="javascript:;" class="weui-footer-link">小飞象</a>            </p>-->
+            <p class="weui-footer__text">版权所有@小飞象所有</p>
+        </div>
+	</div>
+		
+<!--底部栏目-->
+	<div class="weui_tab tab-bottom" style="height: 0;">
+            <div class="weui_tabbar ">
+                <a href="Xfx_Home.html" class="weui_tabbar_item">
+                    <div class="weui_tabbar_icon">
+             		  <img src='weui-master/images/主页.png' />
+                    </div>
+                    <p class="weui_tabbar_label">主页</p>
+                </a>
+                <a href="Xfx_sort.html" class="weui_tabbar_item ">
+                    <div class="weui_tabbar_icon">
+             		  <img src="weui-master/images/分类.png" />
+                    </div>
+                    <p class="weui_tabbar_label">分类</p>
+                </a>
+                <a href="Xfx_shopping.html" class="weui_tabbar_item">
+                    <div class="weui_tabbar_icon">
+             		  <img src="weui-master/images/购物车.png" />
+                    </div>
+                    <p class="weui_tabbar_label">购物车</p>
+                </a>
+                <a href="Xfx_vip.html" class="weui_tabbar_item weui_bar_item_on">
+                    <div class="weui_tabbar_icon">
+             		  <img src="weui-master/images/我的.png" />
+                    </div>
+                    <p class="weui_tabbar_label">会员中心</p>
+                </a>    
+            </div>
+       </div>
+       <!--<section class="weui-menu" style="bottom: 5px;">
+              		<div class="weui-menu-inner">
+        				 <a href="Xfx_Home.html" class="weui_tabbar_item">
+                   			 <div class="weui_tabbar_icon">
+                     		  <img src="weui-master/images/主页.png" />
+                   			 </div>
+                   			 <p class="weui_tabbar_label">主页</p>
+               			</a>	
+        			</div>
+        			<div class="weui-menu-inner">
+        				 <a href="javascript:;" class="weui_tabbar_item">
+                   			 <div class="weui_tabbar_icon">
+                     		  <img src="weui-master/images/分类.png" />
+                   			 </div>
+                   			 <p class="weui_tabbar_label">分类</p>
+               			</a>	
+        			</div>	
+        			<div class="weui-menu-inner">
+        				 <a href="Xfx_shopping.html" class="weui_tabbar_item">
+                   			 <div class="weui_tabbar_icon">
+                     		  <img src="weui-master/images/购物车.png" />
+                   			 </div>
+                   			 <p class="weui_tabbar_label">购物车</p>
+               			</a>	
+        			</div>
+        			<div class="weui-menu-inner">
+        				 <a href="Xfx_Home.html" class="weui_tabbar_item  " >
+                   			 <div class="weui_tabbar_icon">
+                     		  <img src="weui-master/images/我的.png" />
+                   			 </div>
+                   			 <p class="weui_tabbar_label">会员中心</p>
+               			</a>	
+        			</div>	-->
+			<!--分页效果-->
+                <!--<div class="weui_tab_bd">
+        <div class="weui_tab_bd_item">
+            <h3>微信</h3>
+        </div>
+        <div class="weui_tab_bd_item">
+            <h3>通讯录</h3>
+        </div>
+        <div class="weui_tab_bd_item">
+            <h3>发现</h3>
+        </div>
+        <div class="weui_tab_bd_item">
+            <h3>我</h3>
+        </div>
+              <div class="weui_tab_bd_item">
+            <h3>设置</h3>
+        </div>
+    </div>-->
+	</body>
+</html>
